@@ -1,0 +1,1 @@
+function removelrc(){const e=document.querySelector(".aplayer-icon-lrc");e&&(observer.disconnect(),setTimeout((()=>{e.click()}),1),console.log("success"))}const observer=new MutationObserver(((e,o)=>{for(let o of e)"childList"===o.type&&removelrc()})),observerConfig={childList:!0,subtree:!0};observer.observe(document,observerConfig);
